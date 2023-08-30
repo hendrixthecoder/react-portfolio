@@ -1,6 +1,6 @@
 import { FaPhp, FaLaravel, FaNodeJs, FaReact, FaBootstrap, FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiMysql, SiMongodb, SiTailwindcss, SiJquery, SiCss3 } from "react-icons/si";
+import { SiMysql, SiGraphql, SiTypescript, SiMongodb, SiTailwindcss, SiJquery, SiCss3 } from "react-icons/si";
 
 const Technologies = () => {
   return (
@@ -25,26 +25,26 @@ const Technologies = () => {
             </div>
             <div className="flex gap-3">
               <FaNodeJs size={25} className="text-green-600" />
-              <p>Node</p>
-            </div>
-            <div className="flex gap-3">
-              Express
-              <IoLogoJavascript size={20} className="text-yellow-500" />
+              <p>Node/Express</p>
             </div>
             <div className="flex gap-3">
               <SiMysql size={25} className="text-blue-400" />
               MySQL
             </div>
-            <div className="flex gap-3">
+            <div className="flex gap-3 items-center">
               <SiMongodb size={30} className="text-green-600" />
               MongoDB
+            </div>
+            <div className="flex gap-3 items-center">
+              <SiGraphql size={30} className="text-[#F6009B]" />
+              GraphQL
             </div>
           </div>
           <div className=" flex w-full flex-col gap-4 text-white">
             <div className="text-lg font-bold text-my-green">Front End</div>
             <div className="flex items-center gap-3">
               <FaReact className="text-blue-500" />
-              React
+              React/Redux
             </div>
             <div className="flex items-center gap-3">
                 <SiTailwindcss className="text-blue-400"/>
@@ -60,7 +60,7 @@ const Technologies = () => {
             </div>
             <div className="flex items-center gap-3">
                 <IoLogoJavascript size={22} className="text-yellow-500"/>
-                JS
+                JS/TypeScript
             </div>
             <div className="flex items-center gap-3">
                 <FaHtml5 size={22} className="text-orange-600"/>

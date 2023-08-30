@@ -21,12 +21,12 @@ const Navbar = () => {
 
         <div className=" hidden items-center gap-10 text-my-gray lg:flex ">
           <Link to="hero" spy={true} smooth={true} offset={-200} duration={500}>
-            <a
+            <span
               href=""
               className="transition-colors delay-200 duration-500 hover:text-white"
             >
               Home
-            </a>
+            </span>
           </Link>
           <Link
             to="technologies"
@@ -35,12 +35,12 @@ const Navbar = () => {
             offset={-100}
             duration={500}
           >
-            <a
+            <span
               href=""
               className="transition-colors delay-200 duration-500 hover:text-white"
             >
               Tech Stack
-            </a>
+            </span>
           </Link>
 
           <Link
@@ -50,21 +50,21 @@ const Navbar = () => {
             offset={-100}
             duration={500}
           >
-            <a
+            <span
               href=""
               className="transition-colors delay-200 duration-500 hover:text-white"
             >
               Projects
-            </a>
+            </span>
           </Link>
 
           <Link to="faq" spy={true} smooth={true} offset={-100} duration={500}>
-            <a
+            <span
               href=""
               className="transition-colors delay-200 duration-500 hover:text-white"
             >
               FAQs
-            </a>
+            </span>
           </Link>
 
           <Link
@@ -74,12 +74,12 @@ const Navbar = () => {
             offset={-100}
             duration={500}
           >
-            <a
+            <span
               href=""
               className="rounded-md bg-white px-6 py-3 text-black transition-all duration-700 hover:shadow-lg hover:shadow-my-green"
             >
               Get In Touch
-            </a>
+            </span>
           </Link>
         </div>
 
@@ -100,12 +100,12 @@ const Navbar = () => {
         />
         <div className="mb-10"></div>
         <Link to="hero" spy={true} smooth={true} offset={-200} duration={500}>
-          <a
+          <span
             href=""
             className="transition-colors delay-200 duration-500 hover:text-white"
           >
             Home
-          </a>
+          </span>
         </Link>
         <Link
           to="technologies"
@@ -114,12 +114,12 @@ const Navbar = () => {
           offset={-100}
           duration={500}
         >
-          <a
+          <span
             href=""
             className="transition-colors delay-200 duration-500 hover:text-white"
           >
             Tech Stack
-          </a>
+          </span>
         </Link>
 
         <Link
@@ -129,21 +129,21 @@ const Navbar = () => {
           offset={-100}
           duration={500}
         >
-          <a
+          <span
             href=""
             className="transition-colors delay-200 duration-500 hover:text-white"
           >
             Projects
-          </a>
+          </span>
         </Link>
 
         <Link to="faq" spy={true} smooth={true} offset={-100} duration={500}>
-          <a
+          <span
             href=""
             className="transition-colors delay-200 duration-500 hover:text-white"
           >
             FAQs
-          </a>
+          </span>
         </Link>
 
         <Link
@@ -153,12 +153,12 @@ const Navbar = () => {
           offset={-100}
           duration={500}
         >
-          <a
+          <span
             href=""
             className="rounded-md bg-white px-6 py-3 text-black transition-all duration-700 hover:shadow-lg hover:shadow-my-green"
           >
             Get In Touch
-          </a>
+          </span>
         </Link>
       </div>
     </>
