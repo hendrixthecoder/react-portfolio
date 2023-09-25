@@ -32,14 +32,23 @@ const Hero = () => {
           <h3 className="">
             <div className="inline-flex items-center  ">
               <p>Hello!</p>
-              <div className="h-10  lg:h-20 ">
+              <div className="h-10 lg:h-20 ">
                 <Lottie animationData={hand} className="w-10 " />
               </div>
-            </div> 
+            </div>
             My name is <span className="text-my-green underline">Johnbull Biobele</span>. I&apos;m a software developer, experienced in{' '}
             <ReactTyped typeSpeed={200} backSpeed={200} className="text-my-green" strings={experiences} loop />
           </h3>
         </section>
+        <div className="flex justify-center my-7">
+          <a
+            href="/src/assets/mycv.pdf"
+            download="biobele-johnbull-cv.pdf"
+            className="bg-white px-6 cursor-pointer py-3 transition-all duration-700 hover:shadow-lg hover:shadow-my-green"
+          >
+            Download CV
+          </a>
+        </div>
         <div className=" flex flex-col justify-center gap-7 mt-5 items-center text-gray-500">
           <p>Scroll down</p>
           <BsArrowDown size={50} className="animate-bounce text-my-green"/>
