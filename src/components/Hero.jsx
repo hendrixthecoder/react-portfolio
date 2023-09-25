@@ -42,7 +42,7 @@ const Hero = () => {
         </section>
         <div className="flex justify-center my-7">
           <a
-            href="/public/assets/mycv.pdf"
+            href="/assets/mycv.pdf"
             download="biobele-johnbull-cv.pdf"
             className="bg-white px-6 cursor-pointer py-3 transition-all duration-700 hover:shadow-lg hover:shadow-my-green"
           >
