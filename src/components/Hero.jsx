@@ -44,7 +44,7 @@ const Hero = () => {
           <a
             href="/assets/mycv.pdf"
             download="biobele-johnbull-cv.pdf"
-            className="bg-white px-6 cursor-pointer py-3 transition-all duration-700 hover:shadow-lg hover:shadow-my-green"
+            className="bg-white px-6 cursor-pointer py-3 transition-all duration-700 hover:shadow-lg hover:shadow-my-green "
           >
             Download CV
           </a>
