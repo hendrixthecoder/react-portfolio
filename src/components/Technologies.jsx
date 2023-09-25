@@ -1,6 +1,6 @@
-import { FaPhp, FaLaravel, FaNodeJs, FaReact, FaBootstrap, FaHtml5 } from "react-icons/fa";
+import { FaPhp, FaLaravel, FaNodeJs, FaGitAlt, FaReact, FaBootstrap, FaHtml5 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiMysql, SiGraphql, SiTypescript, SiMongodb, SiTailwindcss, SiJquery, SiCss3 } from "react-icons/si";
+import { SiMysql, SiGraphql, SiMongodb, SiTailwindcss, SiJquery, SiCss3 } from "react-icons/si";
 
 const Technologies = () => {
   return (
@@ -71,11 +71,16 @@ const Technologies = () => {
                 CSS
             </div>
           </div>
-          <div className=" flex w-full flex-col gap-4 text-white">
+          <div className="flex w-full flex-col gap-4 text-white">
             <div className="text-lg font-bold text-my-green">Others</div>
-            <div className="">Wordpress</div>
-            <div className="">Ajax</div>
-            <div className="">Axios</div>
+            <div className="flex items-center gap-3">
+              <FaGitAlt size={22} className="text-red-600"/>
+              GIT
+            </div>
+            <div className="flex items-center gap-3">
+              <FaGitAlt size={22} className="text-red-600"/>
+              GitHub Actions
+            </div>
           </div>
         </div>
       </div>
