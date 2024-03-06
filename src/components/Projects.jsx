@@ -66,9 +66,12 @@ const Projects = () => {
               <FaExternalLinkAlt className="" size={15} />
             </a>
             <p className="text-gray-500">
-              Drawing App built with <span>NextJS</span> for UI,{" "}
-              <span>Firebase</span> for Auth, <span>TypeScript</span> for type
-              safety and <span>WebSockets</span> for Realtime drawing updates.
+              Drawing App built with{" "}
+              <span className="text-green-500">NextJS</span> for UI,{" "}
+              <span className="text-green-500">Firebase</span> for Auth,{" "}
+              <span className="text-green-500">TypeScript</span> for type safety
+              and <span className="text-green-500">WebSockets</span> for
+              Realtime drawing updates.
             </p>
             <div className="flex items-center gap-3">
               <FiLink className="text-my-green" size={20} />
@@ -108,7 +111,8 @@ const Projects = () => {
             </a>
             <p className="text-gray-500">
               Drag and drop kanban board application built using{" "}
-              <span>NuxtJS</span> and <span>HTML Drag and Drop API</span>.
+              <span className="text-green-500">NuxtJS</span> and{" "}
+              <span className="text-green-500">HTML Drag and Drop API</span>.
             </p>
             <div className="flex items-center gap-3">
               <FiLink className="text-my-green" size={20} />
