@@ -20,7 +20,7 @@ const Projects = () => {
               alt=""
             />
           </div>
-          <div className="flex flex-col gap-6 p-4">
+          {/* <div className="flex flex-col gap-6 p-4">
             <h3 className="text-2xl font-medium text-my-green">
               CriptaliaElite
             </h3>
@@ -45,7 +45,7 @@ const Projects = () => {
               <div className="bg-my-green p-2">TailwindCSS</div>
               <div className="bg-my-green p-2">GitHub</div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="flex flex-col border border-my-green">
           <div className="relative pb-[50%]">
