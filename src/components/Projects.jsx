@@ -13,13 +13,13 @@ const Projects = () => {
       </div>
       <div className="mt-20 flex flex-col gap-5 md:grid md:grid-cols-3">
         <div className="flex flex-col border border-my-green">
-          <div className="relative pb-[50%]">
+          {/* <div className="relative pb-[50%]">
             <img
               src={coinmaker}
               className="absolute h-full w-full object-fill "
               alt=""
             />
-          </div>
+          </div> */}
           {/* <div className="flex flex-col gap-6 p-4">
             <h3 className="text-2xl font-medium text-my-green">
               CriptaliaElite
