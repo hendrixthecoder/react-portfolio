@@ -7,6 +7,7 @@ import {
   FaBootstrap,
   FaFeather,
   FaDocker,
+  FaAws,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import {
@@ -115,7 +116,7 @@ const OTHER_TECHNOLOGIES = [
   },
   {
     name: "AWS",
-    icon: DiPostgresql,
+    icon: FaAws,
     color: "text-blue-400",
   },
 ];
