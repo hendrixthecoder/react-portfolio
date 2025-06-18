@@ -1,4 +1,3 @@
-import coinmaker from "../assets/company.jpeg";
 import doodleflow from "../assets/doodleflow.png";
 import draganddrop from "../assets/draganddrop.png";
 import { FiLink } from "react-icons/fi";
@@ -12,15 +11,15 @@ const Projects = () => {
         <p className="text-gray-500">Here you will find some of my works.</p>
       </div>
       <div className="mt-20 flex flex-col gap-5 md:grid md:grid-cols-3">
-        <div className="flex flex-col border border-my-green">
-          {/* <div className="relative pb-[50%]">
+        {/* <div className="flex flex-col border border-my-green">
+          <div className="relative pb-[50%]">
             <img
               src={coinmaker}
               className="absolute h-full w-full object-fill "
               alt=""
             />
-          </div> */}
-          {/* <div className="flex flex-col gap-6 p-4">
+          </div>
+          <div className="flex flex-col gap-6 p-4">
             <h3 className="text-2xl font-medium text-my-green">
               CriptaliaElite
             </h3>
@@ -45,8 +44,8 @@ const Projects = () => {
               <div className="bg-my-green p-2">TailwindCSS</div>
               <div className="bg-my-green p-2">GitHub</div>
             </div>
-          </div> */}
-        </div>
+          </div>
+        </div> */}
         <div className="flex flex-col border border-my-green">
           <div className="relative pb-[50%]">
             <img
