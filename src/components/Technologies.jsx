@@ -5,8 +5,8 @@ import {
   FaGitAlt,
   FaReact,
   FaBootstrap,
-  FaHtml5,
   FaFeather,
+  FaDocker,
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import {
@@ -14,11 +14,111 @@ import {
   SiGraphql,
   SiMongodb,
   SiTailwindcss,
-  SiJquery,
-  SiCss3,
   SiRedis,
   SiNuxtdotjs,
+  SiJest,
 } from "react-icons/si";
+import { FaGolang } from "react-icons/fa6";
+import { DiPostgresql } from "react-icons/di";
+
+const BACKEND_TECHNOLOGIES = [
+  {
+    name: "PHP",
+    icon: FaPhp,
+    color: "text-blue-600",
+  },
+  {
+    name: "Laravel",
+    icon: FaLaravel,
+    color: "text-red-500",
+  },
+  {
+    name: "Node/Express",
+    icon: FaNodeJs,
+    color: "text-green-500",
+  },
+  {
+    name: "FeathersJS",
+    icon: FaFeather,
+    color: "text-green-600",
+  },
+  {
+    name: "Redis",
+    icon: SiRedis,
+    color: "text-red-500",
+  },
+  {
+    name: "MySQL",
+    icon: SiMysql,
+    color: "text-blue-400",
+  },
+  {
+    name: "MongoDB",
+    icon: SiMongodb,
+    color: "text-green-600",
+  },
+  {
+    name: "GraphQL",
+    icon: SiGraphql,
+    color: "text-[#F6009B]",
+  },
+];
+
+const FRONTEND_TECHNOLOGIES = [
+  {
+    name: "React/NextJS",
+    icon: FaReact,
+    color: "text-blue-500",
+  },
+  {
+    name: "NuxtJS",
+    icon: SiNuxtdotjs,
+    color: "text-green-500",
+  },
+  {
+    name: "TailwindCSS",
+    icon: SiTailwindcss,
+    color: "text-blue-400",
+  },
+  {
+    name: "Bootstrap",
+    icon: FaBootstrap,
+    color: "text-purple-800",
+  },
+  {
+    name: "JS/Typescript",
+    icon: IoLogoJavascript,
+    color: "text-yellow-500",
+  },
+];
+
+const OTHER_TECHNOLOGIES = [
+  {
+    name: "GIT, GitHub Actions",
+    icon: FaGitAlt,
+    color: "text-red-600",
+  },
+  {
+    name: "Docker",
+    icon: FaDocker,
+    color: "text-blue-600",
+  },
+  {
+    name: "Golang",
+    icon: FaGolang,
+    color: "text-blue-400",
+  },
+  {
+    name: "Jest",
+    icon: SiJest,
+    color: "text-blue-400",
+  },
+  {
+    name: "AWS",
+    icon: DiPostgresql,
+    color: "text-blue-400",
+  },
+];
 
 const Technologies = () => {
   return (
@@ -35,84 +135,40 @@ const Technologies = () => {
         <div className="justify-center-center grid grid-cols-3 gap-4 p-4 text-my-green">
           <div className=" flex w-full flex-col gap-4 text-sm text-white">
             <div className="text-lg font-bold text-my-green ">Backend</div>
-            <div className="flex gap-3">
-              <FaPhp size={25} className="text-blue-600" />
-              <p>PHP</p>
-            </div>
-            <div className="flex gap-3">
-              <FaLaravel size={25} className="text-red-500" />
-              <p>Laravel</p>
-            </div>
-            <div className="flex gap-3">
-              <FaNodeJs size={25} className="text-green-600" />
-              <p>Node/Express</p>
-            </div>
-            <div className="flex gap-3">
-              <FaFeather size={25} className="text-green-600" />
-              <p>FeathersJS</p>
-            </div>
-            <div className="flex gap-3">
-              <SiRedis size={25} className="text-red-500" />
-              <p>Redis</p>
-            </div>
-            <div className="flex gap-3">
-              <SiMysql size={25} className="text-blue-400" />
-              MySQL
-            </div>
-            <div className="flex items-center gap-3">
-              <SiMongodb size={30} className="text-green-600" />
-              MongoDB
-            </div>
-            <div className="flex items-center gap-3">
-              <SiGraphql size={30} className="text-[#F6009B]" />
-              GraphQL
-            </div>
+
+            {BACKEND_TECHNOLOGIES.map((TECH, idx) => {
+              return (
+                <div className="flex gap-3" key={idx}>
+                  <TECH.icon size={23} className={TECH.color} />
+                  <p>{TECH.name}</p>
+                </div>
+              );
+            })}
           </div>
+
           <div className=" flex w-full flex-col gap-4 text-white">
             <div className="text-lg font-bold text-my-green">Front End</div>
-            <div className="flex items-center gap-3">
-              <FaReact className="text-blue-500" />
-              React/NextJS/Redux
-            </div>
-            <div className="flex items-center gap-3">
-              <SiNuxtdotjs className="text-green-500" />
-              NuxtJS
-            </div>
-            <div className="flex items-center gap-3">
-              <SiTailwindcss className="text-blue-400" />
-              TailwindCSS
-            </div>
-            <div className="flex items-center gap-3">
-              <FaBootstrap size={25} className="text-purple-800" />
-              Bootstrap
-            </div>
-            <div className="flex items-center gap-3">
-              <SiJquery size={25} className="text-cyan-600" />
-              JQuery
-            </div>
-            <div className="flex items-center gap-3">
-              <IoLogoJavascript size={22} className="text-yellow-500" />
-              JS/TypeScript
-            </div>
-            <div className="flex items-center gap-3">
-              <FaHtml5 size={22} className="text-orange-600" />
-              HTML
-            </div>
-            <div className="flex items-center gap-3">
-              <SiCss3 size={22} className="text-orange-600" />
-              CSS
-            </div>
+
+            {FRONTEND_TECHNOLOGIES.map((TECH, idx) => {
+              return (
+                <div className="flex gap-3" key={idx}>
+                  <TECH.icon size={23} className={TECH.color} />
+                  <p>{TECH.name}</p>
+                </div>
+              );
+            })}
           </div>
           <div className="flex w-full flex-col gap-4 text-white">
             <div className="text-lg font-bold text-my-green">Others</div>
-            <div className="flex items-center gap-3">
-              <FaGitAlt size={22} className="text-red-600" />
-              GIT
-            </div>
-            <div className="flex items-center gap-3">
-              <FaGitAlt size={22} className="text-red-600" />
-              GitHub Actions
-            </div>
+
+            {OTHER_TECHNOLOGIES.map((TECH, idx) => {
+              return (
+                <div className="flex gap-3 " key={idx}>
+                  <TECH.icon size={23} className={TECH.color} />
+                  <p className="">{TECH.name}</p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
